@@ -16,8 +16,14 @@ st.set_page_config(
 
 # ---------------------------page theming----------------------
 
-[theme]
-backgroundColor = "ead9db"
+page_bg_color = """
+    <style>
+    .stApp {
+        background-color: #ead9db; 
+    }
+    </style>
+    """
+st.markdown(page_bg_color, unsafe_allow_html=True)
 
 # ---------------------------setup title----------------------
 def get_image(image_path):
