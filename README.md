@@ -5,7 +5,7 @@ Welcome! My website app is hosted on Streamlit.
 You can access it [here](https://furrealmatching-ninghchen.streamlit.app/).
 
 If that does not work you can also copy and paste this url: https://furrealmatching-ninghchen.streamlit.app/
-
+---
 ## Citations
 **Languages:**
 - Python
@@ -23,11 +23,11 @@ If that does not work you can also copy and paste this url: https://furrealmatch
 **Cloud Services:**
 - Hugging Face Transformer Model [Documentation] (https://huggingface.co/docs/transformers/en/index)
 
-**Libraries**
+**Libraries:**
 - Pandas
 - Numpy
 - Base 64 Python
-
+---
 ## Prize Tracks
 - Best Beginner
 - Best Overall
