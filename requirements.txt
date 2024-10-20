@@ -1,5 +1,0 @@
-bert-extractive-summarizer
-pandas
-scikit-learn
-sentence-transformers
-streamlit
