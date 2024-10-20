@@ -11,14 +11,18 @@ If that does not work you can also copy and paste this url: https://furrealmatch
 - Python
 - HTML
 - CSS
+
 **Frameworks:**
 - Streamlit
 - Scikit Learn
+
 **Platforms:**
 - Github
 - Streamlit Community Cloud
+
 **Cloud Services:**
 - Hugging Face Transformer Model [Documentation] (https://huggingface.co/docs/transformers/en/index)
+
 **Libraries**
 - Pandas
 - Numpy
