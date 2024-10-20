@@ -14,14 +14,6 @@ st.set_page_config(
     layout="wide",  # Layout can be "centered" or "wide"
 )
 
-# ------------------------page theming------------------ 
-
-[theme]
-primaryColor="#163a84"
-backgroundColor="#ead9db"
-textColor="#31333F"
-font="monospace"
-
 # ---------------------------setup title----------------------
 def get_image(image_path):
     with open(image_path, 'rb') as img_file:
@@ -32,9 +24,9 @@ image_2_url = get_image("ghh_logo.png")  # Replace with your actual image URL or
 title = "Fur Real Matching"
 
 st.markdown(f"""
-    <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 4px solid #31333F; padding: 10px;">
+    <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 4px solid #31333f; padding: 10px;">
         <img src="data:image/png;base64, {image_1_url}" alt="Logo 1" style="height: 80px;">
-        <h1 style="text-align: center; color:#163a84; font-size:64px; text-shadow: 5px 5px #31333F; flex-grow: 1;">{title}</h1>
+        <h1 style="text-align: center; color:#163a84; font-size:64px; text-shadow: 5px 5px #31333f; flex-grow: 1;">{title}</h1>
         <img src="data:image/png;base64, {image_2_url}" alt="Logo 2" style="height: 100px;">
     </div>
     """, unsafe_allow_html=True)
@@ -92,10 +84,10 @@ def display_report(similarities, job_sentences, resume_sentences):
         st.write('----------------------')
         st.write('Score: ', round(similarities[row][col]*100, 2), '%')
         st.html(
-            f"<p style = 'background-color:#bab2b5'><span style='color:silver'>Job Requirement: </span>{job_sentences[row]}</p>"
+            f"<p style = 'background-color:#bab2bf'><span style='color:silver'>Job Requirement: </span>{job_sentences[row]}</p>"
 )
         st.html(
-            f"<p style = 'background-color:#bab2b5'><span style='color:silver'>Best Match in Resume: </span>{resume_sentences[col]}</p>"
+            f"<p style = 'background-color:#bab2bf'><span style='color:silver'>Best Match in Resume: </span>{resume_sentences[col]}</p>"
 )
         #st.write(job_sentences[row])
         #st.write(resume_sentences[col])
