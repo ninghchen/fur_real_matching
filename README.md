@@ -28,6 +28,10 @@ If that does not work you can also copy and paste this url: https://furrealmatch
 - Pandas
 - Numpy
 - Base 64 Python
+
+**Other:**
+- Canva
+  
 ---
 ## Prize Tracks
 - Best Beginner
