@@ -36,7 +36,7 @@ title = "Fur Real Match"
 
 st.markdown(f"""
     <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 4px solid #163a84; padding: 10px;">
-        <img src="data:image/png;base64, {image_1_url}" alt="Logo 1" style="height: 100px;">
+        <img src="data:image/png;base64, {image_1_url}" alt="Logo 1" style="height: 80px;">
         <h1 style="text-align: center; color:#163a84; font-size:64px; font-family: monospace; text-shadow: 5px 5px #e9b9a5; flex-grow: 1;">{title}</h1>
         <img src="data:image/png;base64, {image_2_url}" alt="Logo 2" style="height: 120px;">
     </div>
@@ -85,7 +85,7 @@ def get_similarity_score(similarities):
     return np.max(similarities, axis = 1).mean()
 
 def display_score(score):
-    st.markdown(f"""<div style = "color: #163a84; font-size:48px; font-weight:bold; font-family: monospace; text-align: center; background-color: #ebb99d">Match Score: {score}%</div>""", unsafe_allow_html=True)
+    st.markdown(f"""<div style = "color: #31333f; font-size:40px; font-weight:bold; font-family: monospace; text-align: center; background-color: #ebb99d">Match Score: {score}%</div>""", unsafe_allow_html=True)
 
 def display_report(similarities, job_sentences, resume_sentences):
     rows = len(job_sentences)
