@@ -23,7 +23,7 @@ If that does not work you can also copy and paste this url: https://furrealmatch
 - Streamlit Community Cloud
 
 **Cloud Services:**
-- Hugging Face Transformer Model [Documentation] (https://huggingface.co/docs/transformers/en/index)
+- Hugging Face Transformer Model [Documentation](https://huggingface.co/docs/transformers/en/index)
 
 **Libraries:**
 - Pandas
