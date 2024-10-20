@@ -95,10 +95,10 @@ def display_report(similarities, job_sentences, resume_sentences):
         st.write('----------------------')
         st.write('Score: ', round(similarities[row][col]*100, 2), '%')
         st.html(
-            f"<p style = 'background-color:#fffffe'><span style='color:#57423b'>Job Requirement: </span>{job_sentences[row]}</p>"
+            f"<p style = 'background-color:#fffffe'><span style='color:#163a84'>Job Requirement: </span>{job_sentences[row]}</p>"
 )
         st.html(
-            f"<p style = 'background-color:#fffffe'><span style='color:#57423b'>Best Match in Resume: </span>{resume_sentences[col]}</p>"
+            f"<p style = 'background-color:#fffffe'><span style='color:#163a84'>Best Match in Resume: </span>{resume_sentences[col]}</p>"
 )
         #st.write(job_sentences[row])
         #st.write(resume_sentences[col])
