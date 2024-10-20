@@ -24,10 +24,10 @@ image_2_url = get_image("ghh_logo.png")  # Replace with your actual image URL or
 title = "Fur Real Match"
 
 st.markdown(f"""
-    <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 4px solid #31333F; padding: 10px;">
-        <img src="data:image/png;base64, {image_1_url}" alt="Logo 1" style="height: 80px;">
-        <h1 style="text-align: center; color:#163a84; font-size:64px; text-shadow: 5px 5px #31333F; flex-grow: 1;">{title}</h1>
-        <img src="data:image/png;base64, {image_2_url}" alt="Logo 2" style="height: 100px;">
+    <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 4px solid #163a84; padding: 10px;">
+        <img src="data:image/png;base64, {image_1_url}" alt="Logo 1" style="height: 100px;">
+        <h1 style="text-align: center; color:#163a84; font-size:64px; font-family: monospace; text-shadow: 5px 5px #F9D7D4; flex-grow: 1;">{title}</h1>
+        <img src="data:image/png;base64, {image_2_url}" alt="Logo 2" style="height: 80px;">
     </div>
     """, unsafe_allow_html=True)
 
