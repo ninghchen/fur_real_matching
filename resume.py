@@ -19,7 +19,7 @@ st.set_page_config(
 page_bg_color = """
     <style>
     .stApp {
-        background-color: #efed3c4; #backgrndcolor
+        background-color: #efd3c4; #backgrndcolor
     }
     </style>
     """
