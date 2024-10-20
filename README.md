@@ -2,7 +2,7 @@
 girls hoo hack uva 2024 hackathon
 
 ## Website URL:
-Welcome! My website app is hosted on Streamlit Community Cloud.
+Welcome! The website app is hosted on Streamlit Community Cloud.
 You can access it [here](https://furrealmatching-ninghchen.streamlit.app/).
 
 If that does not work you can also copy and paste this url: https://furrealmatching-ninghchen.streamlit.app/
