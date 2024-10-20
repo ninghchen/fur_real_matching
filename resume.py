@@ -21,10 +21,6 @@ page_bg_color = """
     .stApp {
         background-color: #efd3c4; 
     }
-
-    textarea {
-	color: #57423b;
-	background-color: #fffffe;
     </style>
     """
 st.markdown(page_bg_color, unsafe_allow_html=True)
