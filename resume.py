@@ -9,8 +9,8 @@ import numpy as np
 
 # ------------------------page configuration------------------
 st.set_page_config(
-    page_title="Fur Real",  # Title of the browser tab
-    page_icon="DoggoLogo.png",  # Icon for the browser tab
+    page_title="UVA Hackathon",  # Title of the browser tab
+    page_icon="uva.png",  # Icon for the browser tab
     layout="wide",  # Layout can be "centered" or "wide"
 )
 
@@ -19,14 +19,14 @@ def get_image(image_path):
     with open(image_path, 'rb') as img_file:
         return base64.b64encode(img_file.read()).decode()
 
-image_1_url = get_image("DoggoLogo.png")  # Replace with your actual image URL or path
-image_2_url = get_image("ghh_logo.png")  # Replace with your actual image URL or path
-title = "Fur Real Matching"
+image_1_url = get_image("uva.png")  # Replace with your actual image URL or path
+image_2_url = get_image("UVA-logo.png")  # Replace with your actual image URL or path
+title = "UVA Hackathon 2024"
 
 st.markdown(f"""
-    <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 4px solid #31333f; padding: 10px;">
+    <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 4px solid #000080; padding: 10px;">
         <img src="data:image/png;base64, {image_1_url}" alt="Logo 1" style="height: 80px;">
-        <h1 style="text-align: center; color:#163a84; font-size:64px; text-shadow: 5px 5px #31333f; flex-grow: 1;">{title}</h1>
+        <h1 style="text-align: center; color:#FF5733; font-size:64px; text-shadow: 5px 5px #000080; flex-grow: 1;">{title}</h1>
         <img src="data:image/png;base64, {image_2_url}" alt="Logo 2" style="height: 100px;">
     </div>
     """, unsafe_allow_html=True)
@@ -74,7 +74,7 @@ def get_similarity_score(similarities):
     return np.max(similarities, axis = 1).mean()
 
 def display_score(score):
-    st.markdown(f"""<div style = "color: #163a84; font-size:48px; font-weight:bold; font-family: monospace; text-align: center; background-color: #edc7b7">Match Score: {score}%</div>""", unsafe_allow_html=True)
+    st.markdown(f"""<div style = "color: #dc7633; font-size:48px; font-weight:bold; font-family: fantasy; text-align: center; background-color: #fdedec">Match Score: {score}%</div>""", unsafe_allow_html=True)
 
 def display_report(similarities, job_sentences, resume_sentences):
     rows = len(job_sentences)
@@ -84,10 +84,10 @@ def display_report(similarities, job_sentences, resume_sentences):
         st.write('----------------------')
         st.write('Score: ', round(similarities[row][col]*100, 2), '%')
         st.html(
-            f"<p style = 'background-color:#bab2bf'><span style='color:silver'>Job Requirement: </span>{job_sentences[row]}</p>"
+            f"<p style = 'background-color:#ebf5fb'><span style='color:silver'>Job Requirement: </span>{job_sentences[row]}</p>"
 )
         st.html(
-            f"<p style = 'background-color:#bab2bf'><span style='color:silver'>Best Match in Resume: </span>{resume_sentences[col]}</p>"
+            f"<p style = 'background-color:#eafaf1'><span style='color:silver'>Best Match in Resume: </span>{resume_sentences[col]}</p>"
 )
         #st.write(job_sentences[row])
         #st.write(resume_sentences[col])
