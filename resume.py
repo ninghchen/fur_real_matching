@@ -14,6 +14,11 @@ st.set_page_config(
     layout="wide",  # Layout can be "centered" or "wide"
 )
 
+# ---------------------------page theming----------------------
+
+[theme]
+backgroundColor = "ead9db"
+
 # ---------------------------setup title----------------------
 def get_image(image_path):
     with open(image_path, 'rb') as img_file:
