@@ -1,5 +1,5 @@
 # Fur Real Match
-girls hoo hack 2024 hackathon
+girls hoo hack uva 2024 hackathon
 
 ## Website URL:
 Welcome! My website app is hosted on Streamlit Community Cloud.
