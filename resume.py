@@ -11,7 +11,7 @@ import numpy as np
 st.set_page_config(
     page_title="Fur Real",  # Title of the browser tab
     page_icon="DoggoLogo.png",  # Icon for the browser tab
-    layout="wide",  # Layout can be "centered" or "wide"
+    layout="wide"
 )
 
 # ---------------------------page theming----------------------
@@ -19,7 +19,7 @@ st.set_page_config(
 page_bg_color = """
     <style>
     .stApp {
-        background-color: #efd3c4; #backgrndcolor
+        background-color: #efd3c4; # Background color
     }
     </style>
     """
@@ -30,8 +30,8 @@ def get_image(image_path):
     with open(image_path, 'rb') as img_file:
         return base64.b64encode(img_file.read()).decode()
 
-image_1_url = get_image("DoggoLogo.png")  # Replace with your actual image URL or path
-image_2_url = get_image("shiba.png")  # Replace with your actual image URL or path
+image_1_url = get_image("DoggoLogo.png")  
+image_2_url = get_image("shiba.png") 
 title = "Fur Real Match"
 
 st.markdown(f"""
