@@ -85,7 +85,7 @@ def get_similarity_score(similarities):
     return np.max(similarities, axis = 1).mean()
 
 def display_score(score):
-    st.markdown(f"""<div style = "color: #80665c; font-size:40px; font-weight:bold; font-family: monospace; text-align: center; background-color: #ebb99d">Match Score: {score}%</div>""", unsafe_allow_html=True)
+    st.markdown(f"""<div style = "color: #57423b; font-size:40px; font-weight:bold; font-family: monospace; text-align: center; background-color: #ebb99d">Match Score: {score}%</div>""", unsafe_allow_html=True)
 
 def display_report(similarities, job_sentences, resume_sentences):
     rows = len(job_sentences)
