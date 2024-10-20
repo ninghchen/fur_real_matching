@@ -38,7 +38,7 @@ st.markdown(f"""
     <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 4px solid #163a84; padding: 10px;">
         <img src="data:image/png;base64, {image_1_url}" alt="Logo 1" style="height: 100px;">
         <h1 style="text-align: center; color:#163a84; font-size:64px; font-family: monospace; text-shadow: 5px 5px #e9b9a5; flex-grow: 1;">{title}</h1>
-        <img src="data:image/png;base64, {image_2_url}" alt="Logo 2" style="height: 100px;">
+        <img src="data:image/png;base64, {image_2_url}" alt="Logo 2" style="height: 120px;">
     </div>
     """, unsafe_allow_html=True)
 
