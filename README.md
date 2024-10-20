@@ -1,7 +1,7 @@
 # fur_real_matching
 
 ## Website URL:
-Welcome! My website app is hosted on Streamlit.
+Welcome! My website app is hosted on Streamlit Community Cloud.
 You can access it [here](https://furrealmatching-ninghchen.streamlit.app/).
 
 If that does not work you can also copy and paste this url: https://furrealmatching-ninghchen.streamlit.app/
