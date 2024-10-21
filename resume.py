@@ -45,7 +45,7 @@ st.markdown(f"""
 # ----------------------------------Cache Global Variables-------------
 @st.cache_resource
 def get_summarizer():
-    """Create a summarizer to split a paragrah into semantic sentences"""
+    """Create a summarizer to split a paragraph into semantic sentences"""
     model = AutoModel.from_pretrained('sentence-transformers/all-mpnet-base-v2')
     tokenizer = AutoTokenizer.from_pretrained('sentence-transformers/all-mpnet-base-v2')
     return Summarizer(custom_model=model, custom_tokenizer=tokenizer)
