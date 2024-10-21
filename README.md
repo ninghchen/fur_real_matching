@@ -8,7 +8,7 @@ You can access it [here](https://furrealmatching-ninghchen.streamlit.app/).
 If that does not work you can also copy and paste this url: https://furrealmatching-ninghchen.streamlit.app/
 
 ---
-## Citations
+## Citations:
 **Languages:**
 - Python
 - HTML
@@ -29,7 +29,7 @@ If that does not work you can also copy and paste this url: https://furrealmatch
 - Canva
   
 ---
-## Prize
+## Prize:
 - Best Beginner
 
 
